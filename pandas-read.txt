@@ -1,0 +1,16 @@
+import pandas as pd 
+
+dados = pd.read_csv('/content/sih_cnv_qiuf060351152_249_104_154 (1).csv, encoding='ISO-8859-1', skiprows=3, sep=';', skipfooter=12, thousands='.', decimal=',') 
+
+dados.head()
+
+dados.tail()
+
+dados.info()
+
+pd.options.display.float_format = '{:.2f}'.format
+
+dados.mean(numeric_only=True)
+
+media_coluna_A = df['A'].mean()
+print(f"Média da coluna A: {media_coluna_A}")
